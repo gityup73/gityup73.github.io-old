@@ -1,0 +1,127 @@
+* {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+	background-color: #A2DED0;
+}
+
+#menu {
+	color: white;
+}
+.jumbotron {
+    background-image: url("selfie.jpg"); 
+    padding: 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin-top: -40px;
+    padding-bottom: 270px;
+    background-attachment: fixed;
+    background-position:  center -168px;
+    
+}
+.jumbotron h1 {
+    position: absolute;
+    top:18;
+    left:0;
+    padding-left: 20px;
+    color: 	#F7FAFE;
+}
+
+.maintext {
+	background-color: #323232;
+	color: #F7FAFE;
+	margin-top: -30px;
+}
+
+.maintext h3 {
+	text-align: center;
+}
+
+.flex-container {
+	display: flex;
+}
+.developer {
+	margin-left: 10%;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	width: 25%;
+	display: inline-flex;
+	justify-content: center;
+	padding-left: 11px;
+}
+
+.carpenter {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	width: 25%;
+	justify-content: center;
+	display: inline-flex;
+}
+.ukelele {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-right: 5%;
+	width: 30%;
+	display: inline-flex;
+	justify-content: center;
+}
+
+h4 {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+footer {
+	background-color: #D64541;
+	width: 100%;
+	position: absolute;
+	height: 40px;
+}
+
+footer p {
+	text-align: center;
+	padding: 10px;
+}
+
+footer a, p {
+	color: #FFF;
+	vertical-align: middle;
+}
+
+/*** Media Queries ***/
+/*add this to end of css files; 
+if screen width <776px, makes sure img's take up only 90% 
+of the max width  */
+@media screen and (max-width: 776px) {
+	.dropdown-toggle {
+		max-width: 90%;
+		margin: auto;
+		float:left;
+	}
+}
+
+@media screen and (max-width: 776px) {
+	.jumbotron h1 {
+		position: absolute;
+	    top: 200px;
+	    left:0;
+	    padding-left: 20px;
+	    color: 	#F7FAFE;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	 .flex-container, .developer, .carpenter, .ukelele {
+		max-width: 90%;
+		width: 90%;
+		margin: auto;
+		flex-direction: column;
+		justify-content: center;
+		padding: 0px;
+	}
+
+	
+}
